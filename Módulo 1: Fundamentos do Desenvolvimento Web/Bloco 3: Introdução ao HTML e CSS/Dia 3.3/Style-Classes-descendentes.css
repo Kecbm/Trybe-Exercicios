@@ -1,0 +1,38 @@
+ol {
+    background-color: yellow;
+}
+
+ol li.par {
+    color: green;
+    font-weight: bold;
+}
+
+ol li.impar {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+.header {
+    color: red;
+}
+
+li {
+    font-size: 20px;
+}
+
+ul li.lin {
+    color: blue;
+}
+
+ul li.java {
+    background-color: rgb(255, 67, 99);
+}
+
+ul li.site:hover {
+    font-weight: bold;
+    color: red;
+}
