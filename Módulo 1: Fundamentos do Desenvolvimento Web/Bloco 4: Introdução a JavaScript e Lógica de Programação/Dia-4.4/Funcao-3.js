@@ -1,10 +1,10 @@
-function maiorValor (array){
+function menorValor (array){
 
     for(let indice = 0; indice < array.length; indice = indice + 1){
-        if(array[indice] > array[indice + 1]){
+        if(array[indice] < array[indice + 1]){
     return console.log(indice);
         }
     }
 }
 
-maiorValor([2, 3, 6, 7, 10, 1]);
+menorValor([2, 4, 6, 7, 10, 0, -3]);
