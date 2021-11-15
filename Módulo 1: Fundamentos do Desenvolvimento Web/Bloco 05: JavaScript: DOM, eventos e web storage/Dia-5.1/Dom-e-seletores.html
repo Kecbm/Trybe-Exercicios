@@ -6,6 +6,8 @@
       <p id="paragraph">Dê uma cor para este parágrafo!</p>
       <h4 id="subtitle">Subtítulo</h4>
       <p id="second-paragraph">Segundo parágrafo!</p>
+      <span class="personagem">Senhor das Estrelas</span>
+      <span class="personagem">Baby Groot</span>
     </header>
     <script>
       const paragraph = document.getElementById("paragraph");
@@ -23,6 +25,12 @@
       el.style.cssText = 
     'color: white;' +
     'background-color: red;' +
+    'border: 1px solid black';
+
+    let guardioes = document.getElementsByTagName('span')[0];
+    guardioes.style.cssText = 
+    'color: red;' +
+    'background-color: white;' +
     'border: 1px solid black';
     </script>
   </body>
