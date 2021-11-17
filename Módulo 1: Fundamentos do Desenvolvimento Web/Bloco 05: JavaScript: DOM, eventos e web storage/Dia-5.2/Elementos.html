@@ -29,5 +29,20 @@
       document.getElementById("elementoOndeVoceEsta").nextElementSibling;
 
       document.getElementById("pai").childNodes[5];
+
+      let novoElem = document.createElement('section');  
+      let pai = document.getElementById("elementoOndeVoceEsta");
+      var section = document.getElementById("primeiroFilhoDoFilho");
+      pai.insertBefore(novoElem, section);  
+
+      var ondeVcEsta = document.getElementById("elementoOndeVoceEsta");
+      var titulo = document.createElement('h1');
+      ondeVcEsta.appendChild(titulo);
+
+      var filhoDoFilho = document.getElementById("primeiroFilhoDoFilho");
+      var tituloDois = document.createElement('h2');
+      filhoDoFilho.appendChild(tituloDois);
+      
+      document.getElementsByTagName('h2')[0].nextElementSibling.nextElementSibling;
   </script>
 </body>
