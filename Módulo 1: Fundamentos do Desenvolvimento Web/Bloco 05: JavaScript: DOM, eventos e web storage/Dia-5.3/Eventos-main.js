@@ -21,22 +21,42 @@ function recebeClick(){
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
-let novoTexto = document.getElementById('first-li');
+let novoTexto = document.getElementsByClassName('tech');
 
-novoTexto.addEventListener("keyup", alteraTexto);
+novoTexto.addEventListener("change", alteraTexto);
 
 let caixa = document.getElementById('input');
 
 function alteraTexto(){
-    novoTexto.innerText = caixa;
+    novoTexto.innerText = caixa.value;
 }
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portifólio?
+let pai = document.getElementById("my-spotrybefy");
+
+let titulo = document.createElement('a');
+
+pai.appendChild(titulo);
+
+titulo.target = "_blank";
+
+titulo.addEventListener("click", clicou);
+
+function clicou(){
+  titulo.href = 'https://github.com/Kecbm';
+}
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+let mouse = document.getElementById("my-spotrybefy");
+
+mouse.addEventListener("mouseover", mouseEmCima);
+
+function mouseEmCima(){
+  mouse.style.color = '#2fc18c';
+}
 
 // Segue abaixo um exemplo do uso de event.target:
 
